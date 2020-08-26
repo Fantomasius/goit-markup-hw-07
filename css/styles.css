@@ -1209,14 +1209,13 @@ textarea {
 
 /* Form button */
 
-.form-button-container {
-	display: flex;
+.form-button {
+	display: block;
 	align-items: center;
 	justify-content: center;
-}
-
-.form-button {
-	display: inline-block;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	padding-top: 8px;
 	padding-bottom: 8px;
 	border-radius: 4px;
@@ -1231,8 +1230,6 @@ textarea {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	align-items: center;
-	text-align: center;
 	letter-spacing: 0.06em;
 	text-decoration: none;
 	cursor: pointer;
