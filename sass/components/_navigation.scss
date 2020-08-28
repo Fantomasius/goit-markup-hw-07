@@ -74,26 +74,7 @@
 	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item:hover,
-.item:focus {
-	--color2: $accent-color;
-}
-
-.link-icon {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 10px;
-
-	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-icon:hover,
-.link-icon:focus {
-	--color2: $accent-color;
-}
-
-.contact .link {
+.header-link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -111,8 +92,23 @@
 	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact .link:hover,
-.contact .link:focus {
+.link-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 10px;
+	fill: $primary-text-color;
+
+	transition: all $cubic-bezier-time cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-link:hover,
+.header-link:focus {
 	color: $accent-color;
-	--color2: $accent-color;
+}
+
+.header-link:hover .link-icon,
+.header-link:focus .link-icon {
+	color: $accent-color;
+	fill: $accent-color;
 }
